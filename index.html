@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-flex" href="#"><img src="./image/logo.png" class="w-50" alt=""> <h3 class="fs-5 text-white ms-1">weather</h3></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item ">
+                <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="">Live Camera</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="">Photo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./contact/contact.html">Contact Us</a>
+              </li>
+           
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <header id="home" class="home vh-100 py-2">
+        <div class="container ">
+          <div class="inputt d-flex">
+            <input id="search" type="search" class="w-75 mx-auto my-5 form-control" placeholder="Find your location......" > 
+            <button onclick="searching()" class="btn btn-info text-white ">Find</button>
+          </div>
+           
+         <div class="row days text-white" id="weather">
+            <div class="col-md-4 day-1">
+              <h6 class="text-center current-day"></h6>
+              <div class="location">
+                <h6 class="city fs-3"></h6>
+                <h1 class="country fs-3"></h1>
+                <p class="temp fs-1 text-center"></p>
+                <div class="icon"></div>
+              </div>
+            
+            </div>
+            <div class="col-md-4 day-2">
+              <h6 class="text-center n-day"></h6>
+              <div class="location">
+                <p class="temp fs-1 text-center"></p>
+                <div class="icon"></div>
+              </div>
+              
+            </div>
+            <div class="col-md-4 day-3">
+              <h6 class="text-center nn-day"></h6>
+              <div class="location">
+                <p class="temp fs-1 text-center"></p>
+                <div class="icon"></div>
+              </div>
+            </div>
+         </div>
+         <div class="row section-2">
+            <div class="col-md-6">
+                <div class="inputt d-flex">
+                    <input type="search" class="w-100  my-5 form-control" placeholder="Enter your email to subscribe......" > 
+                    <button class="btn-1 btn btn-info text-white">subscribe</button>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="icons">
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+         </div>
+        </div>
+      </header>
+
+   <script src="./js/bootstrap.bundle.min.js"></script> 
+   <script src="./js/main.js"></script>
+</body>
+</html>
